@@ -1,0 +1,8 @@
+<p>Simple usage</p>
+<date-select [(Date)]="chosenDate" (DateChange)="printDate($event)"></date-select>
+
+
+<p>Usage with form</p>
+<form [formGroup]="form">
+  <date-select formControlName="ChosenDate"></date-select>
+</form>
